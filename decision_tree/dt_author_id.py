@@ -11,7 +11,7 @@
 import sys
 from time import time
 import matplotlib.pyplot as plt
-sys.path.insert(1,"/Users/jerry/PycharmProjects/sayan_3/ud120-projects-master/tools/")
+sys.path.append("/.../tools/")
 from email_preprocess import preprocess
 
 
