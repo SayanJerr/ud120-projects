@@ -13,11 +13,9 @@
 import sys
 import matplotlib as plt
 from time import time
-sys.path.insert(1,"/Users/jerry/PycharmProjects/sayan_3/ud120-projects-master/tools/")
-sys.path.insert(2,"/Users/jerry/PycharmProjects/sayan_3/ud120-projects-master/choose_your_own")
+sys.path.append("/.../tools/")
+
 from email_preprocess import preprocess
-from class_vis import prettyPicture, output_image
-from prep_terrain_data import makeTerrainData
 
 
 
@@ -27,7 +25,7 @@ from prep_terrain_data import makeTerrainData
 features_train, features_test, labels_train, labels_test = preprocess()
 
 
-features_train, labels_train, features_test, labels_test = makeTerrainData()
+
 
 #########################################################
 ### your code goes here ###
@@ -56,5 +54,4 @@ def NBAccuracy(features_train, labels_train, features_test, labels_test):
 
 #########################################################
 clf = NBAccuracy(features_train, labels_train, features_test, labels_test)
-prettyPicture(clf, features_test, labels_test)
-plt.show()
+print(clf)
