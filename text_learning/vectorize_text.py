@@ -1,7 +1,7 @@
 import pickle
 import os
 import sys
-sys.path.append("/Users/jerry/PycharmProjects/sayan_3/ud120-projects-master/tools/")
+sys.path.append("/.../tools/")
 from sklearn.feature_extraction.text import TfidfVectorizer
 from parse_out_email_text import parseOutText
 "/Users/jerry/PycharmProjects/sayan_3/ud120-projects-master/textlearning/"
