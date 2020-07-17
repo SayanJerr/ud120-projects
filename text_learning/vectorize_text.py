@@ -4,7 +4,7 @@ import sys
 sys.path.append("/.../tools/")
 from sklearn.feature_extraction.text import TfidfVectorizer
 from parse_out_email_text import parseOutText
-"/Users/jerry/PycharmProjects/sayan_3/ud120-projects-master/textlearning/"
+
 
 """
     Starter code to process the emails from Sara and Chris to extract
