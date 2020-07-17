@@ -20,10 +20,10 @@ import pickle
 import pandas as pd
 import numpy as np
 import sys
-sys.path.append("/Users/jerry/PycharmProjects/sayan_3/ud120-projects-master/final_project")
+sys.path.append("/.../final_project")
 import poi_email_addresses
 
-enron_data = pickle.load(open("/Users/jerry/PycharmProjects/sayan_3/ud120-projects-master/final_project/final_project_dataset.pkl", "rb"))
+enron_data = pickle.load(open("/.../final_project_dataset.pkl", "rb"))
 df = pd.DataFrame(enron_data)
 # g =df.count(axis = 'index')
 # # print(df)
