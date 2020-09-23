@@ -33,7 +33,7 @@
 
 import numpy as np
 
-def featureFormat( dictionary, features, remove_NaN=True, remove_all_zeroes=True, remove_any_zeroes=False, sort_keys = False):
+def featureFormat( dictionary, features, remove_NaN=True, remove_all_zeroes=True, remove_any_zeroes=False, sort_keys =True ):
     """ convert dictionary to numpy array of features
         remove_NaN = True will convert "NaN" string to 0.0
         remove_all_zeroes = True will omit any data points for which
@@ -47,10 +47,7 @@ def featureFormat( dictionary, features, remove_NaN=True, remove_all_zeroes=True
         NOTE: first feature is assumed to be 'poi' and is not checked for
             removal for zero or missing values.
     """
-
-
-    return_list = []
-
+    
     # Key order - first branch is for Python 3 compatibility on mini-projects,
     # second branch is for compatibility on final project.
     if isinstance(sort_keys, str):
@@ -59,18 +56,17 @@ def featureFormat( dictionary, features, remove_NaN=True, remove_all_zeroes=True
     elif sort_keys:
         keys = sorted(dictionary.keys())
     else:
-        keys = dictionary.keys()
-
-    for key in keys:
+        keys = list(dictionary.keys())
+    return_list = []
+    for i in keys:
         tmp_list = []
         for feature in features:
             try:
-                dictionary[key][feature]
+                dictionary[i][feature]
             except KeyError:
-                print "error: key ", feature, " not present"
-                return
-            value = dictionary[key][feature]
-            if value=="NaN" and remove_NaN:
+                print("error: key ", feature, " not present")
+            value = dictionary[i][feature]
+            if value== 'nan':
                 value = 0
             tmp_list.append( float(value) )
 
@@ -122,6 +118,9 @@ def targetFeatureSplit( data ):
         features.append( item[1:] )
 
     return target, features
+
+
+
 
 
 
