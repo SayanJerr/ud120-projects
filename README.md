@@ -12,7 +12,7 @@ Welcome to the repository for the Udacity's Intro to Machine Learning course (ud
 4. [Usage](#usage)
 5. [Project Descriptions](#project-descriptions)
 6. [Contributing](#contributing)
-7. [License](#license)
+
 
 ## Introduction
 
@@ -99,10 +99,5 @@ This project involves using clustering algorithms to identify distinct customer 
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request. Ensure that your contributions adhere to the existing coding style and include appropriate tests.
 
-## License
-
-This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
----
 
 Feel free to reach out if you have any questions or need further assistance with the course material. Happy learning!
